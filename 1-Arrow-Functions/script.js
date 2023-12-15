@@ -15,6 +15,21 @@ const greet = (user) => user;
 
 //here note that we did not use () as well as we did not use the 'return' keyword as well
 
+/* ---------------------------------------------- */
+
+//Let us see the main use of arrow function with 'this' keyword
+
+let person = {
+  name: "Tushar",
+  age: 19,
+  address: "Eskaton",
+  hobbies: ["reading", "coding", "gaming"],
+  showName() {
+    this.hobbies.forEach((item) => console.log(item));
+  },
+};
+person.showName(); //output: "reading", "coding", "gaming"
+
 //Arrow Functions with ForEach loop
 
 let myArray = ["apple", "orange", "coconut"];
